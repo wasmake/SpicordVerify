@@ -1,0 +1,4 @@
+name: SpicordVerify
+version: ${project.version}
+main: com.wasmake.SpicordVerify.SpicordVerifyBungee
+author: wasmake
