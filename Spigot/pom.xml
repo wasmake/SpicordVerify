@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.wasmake.SpicordVeify</groupId>
+        <groupId>com.wasmake.SpicordVerify</groupId>
         <artifactId>SpicordVerify</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
@@ -16,6 +16,9 @@
     <packaging>jar</packaging>
     <name>SpicordVerify Spigot</name>
 
+    <properties>
+        <main.basedir>${project.parent.basedir}</main.basedir>
+    </properties>
     <repositories>
         <repository>
             <id>spigot-repo</id>
@@ -24,18 +27,6 @@
     </repositories>
     <dependencies>
         <dependency>
-            <groupId>com.wasmake.SpicordVeify</groupId>
-            <artifactId>Bungee</artifactId>
-            <version>${project.version}</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.wasmake.SpicordVeify</groupId>
-            <artifactId>Global</artifactId>
-            <version>${project.version}</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.11.2-R0.1-SNAPSHOT</version>
@@ -43,10 +34,22 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.wasmake.SpicordVeify</groupId>
-            <artifactId>Global</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>com.wasmake.SpicordVerify</groupId>
+            <artifactId>SpicordVerify-Bungee</artifactId>
+            <version>${project.version}</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.wasmake.SpicordVerify</groupId>
+            <artifactId>Global</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>eu.mcdb</groupId>
+            <artifactId>spicord</artifactId>
+            <version>2.3.0-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
